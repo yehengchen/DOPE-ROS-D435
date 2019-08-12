@@ -1,7 +1,7 @@
 # 3D Object Pose Estimation - ROS REALSENSE
 
 ![](https://github.com/yehengchen/dope_ros_realsense/blob/master/dope/dope_1.gif)
-
+<img src="https://github.com/yehengchen/dope_ros_realsense/blob/master/dope/dope_2.png" width="60%" height="60%">
 
 ## DOPE Installing
 
@@ -65,14 +65,14 @@ Specifically, make sure that the ros package ddynamic_reconfigure is installed. 
 ***
 ## Running
 
-1. **Start ROS master**
+__1. Start ROS master__
     ```
     cd ~/catkin_ws
     source devel/setup.bash
     roscore
     ```
 
-2. **Start camera node** (or start your own camera node)
+__2. Start camera node (or start your own camera node)__
     
 Realsense D435 & usb_cam node (./dope/config/config_pose.yaml):    
     ``` 
@@ -84,12 +84,12 @@ Start camera node:
     roslaunch realsense2_camera rs_rgbd.launch  # Publishes RGB images to `/camera/color/image_raw`
     ```
 
-3. **Start DOPE node**
+__3. Start DOPE node__
     ```
     roslaunch dope dope.launch [config:=/path/to/my_config.yaml]  # Config file is optional; default is `config_pose.yaml`
     ```
 
-4. **Start rviz node**
+__4. Start rviz node__
     ```
     rosrun rviz rviz
     ```
