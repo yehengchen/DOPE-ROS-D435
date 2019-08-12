@@ -1,6 +1,9 @@
 # dope_ros_realsense
 
 
+
+## DOPE Installing
+
 __Step 1: Download the DOPE code__
 
     cd ~/catkin_ws/src
@@ -27,16 +30,16 @@ __Step 4: Download [the weights](https://drive.google.com/open?id=1DfoA3m_Bm0fW8
 
 ## ROS Wrapper for Intel® RealSense™ Devices
 
-### Step 1: Install the latest Intel® RealSense™ SDK 2.0
+__Step 1: Install the latest Intel® RealSense™ SDK 2.0__
+
 Install from [Debian Package](https://github.com/IntelRealSense/librealsense/blob/master/doc/distribution_linux.md#installing-the-packages) - In that case treat yourself as a developer. Make sure you follow the instructions to also install librealsense2-dev and librealsense-dkms packages.
 OR
 Build from sources by downloading the latest Intel® RealSense™ SDK 2.0 and follow the instructions under [Linux Installation](https://github.com/IntelRealSense/librealsense/blob/master/doc/installation.md)
 
-### Step 2: Install the ROS distribution
+__Step 2: Install the ROS distribution__
 Install ROS Kinetic, on Ubuntu 16.04
 
-### Step 3: Install Intel® RealSense™ ROS from Sources
-catkin workspace
+__Step 3: Install Intel® RealSense™ ROS from Sources__
   
     cd ~/catkin_ws/src/
 
