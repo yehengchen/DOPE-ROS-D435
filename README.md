@@ -5,6 +5,10 @@
 
 __[DOPE_Demo](https://www.bilibili.com/video/av63370152)__
 
+## Development Environment
+- Ubuntu16.04.2
+- ROS Kinetic
+
 ## DOPE Installing
 
 __Step 1: Download the DOPE code__
