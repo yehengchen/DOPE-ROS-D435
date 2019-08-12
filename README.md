@@ -1,6 +1,32 @@
 # dope_ros_realsense
 
+
+__Step 1: Download the DOPE code__
+
+    cd ~/catkin_ws/src
+    git clone https://github.com/NVlabs/Deep_Object_Pose.git dope
+
+__Step 2: Install python dependencies__
+
+    cd ~/catkin_ws/src/dope
+    pip install -r requirements.txt
+
+__Step 3: Install ROS dependencies__
+
+    cd ~/catkin_ws
+    rosdep install --from-paths src -i --rosdistro kinetic
+    sudo apt-get install ros-kinetic-rosbash ros-kinetic-ros-comm
+    Build
+
+    cd ~/catkin_ws
+    catkin_make
+
+__Step 4: Download [the weights](https://drive.google.com/open?id=1DfoA3m_Bm0fW8tOWXGVxi4ETlLEAgmcg) and save them to the `weights` folder, *i.e.*, `~/catkin_ws/src/dope/weights/`.__
+
+***
+
 ## ROS Wrapper for Intel® RealSense™ Devices
+
 ### Step 1: Install the latest Intel® RealSense™ SDK 2.0
 Install from [Debian Package](https://github.com/IntelRealSense/librealsense/blob/master/doc/distribution_linux.md#installing-the-packages) - In that case treat yourself as a developer. Make sure you follow the instructions to also install librealsense2-dev and librealsense-dkms packages.
 OR
@@ -10,9 +36,8 @@ Build from sources by downloading the latest Intel® RealSense™ SDK 2.0 and fo
 Install ROS Kinetic, on Ubuntu 16.04
 
 ### Step 3: Install Intel® RealSense™ ROS from Sources
-Create a catkin workspace
+catkin workspace
   
-    mkdir -p ~/catkin_ws/src
     cd ~/catkin_ws/src/
 
 Clone the latest Intel® RealSense™ ROS from [here](https://github.com/IntelRealSense/realsense-ros/releases) into 'catkin_ws/src/'
@@ -32,3 +57,72 @@ Specifically, make sure that the ros package ddynamic_reconfigure is installed. 
     catkin_make install
     echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
     source ~/.bashrc
+    
+***
+## Running
+
+1. **Start ROS master**
+    ```
+    cd ~/catkin_ws
+    source devel/setup.bash
+    roscore
+    ```
+
+2. **Start camera node** (or start your own camera node)
+    
+Realsense D435 & usb_cam node (./dope/config/config_pose.yaml):    
+    ``` 
+    topic_camera: "/camera/color/image_raw"            #"/usb_cam/image_raw"
+    topic_camera_info: "/camera/color/camera_info"     #"/usb_cam/camera_info"
+    ``` 
+Start camera node:
+    ``` 
+    roslaunch realsense2_camera rs_rgbd.launch  # Publishes RGB images to `/camera/color/image_raw`
+    ```
+
+3. **Start DOPE node**
+    ```
+    roslaunch dope dope.launch [config:=/path/to/my_config.yaml]  # Config file is optional; default is `config_pose.yaml`
+    ```
+
+4. **Start rviz node**
+    ```
+    rosrun rviz rviz
+    ```
+
+## Debugging
+
+* The following ROS topics are published (assuming `topic_publishing == 'dope'`):
+    ```
+    /dope/webcam_rgb_raw       # RGB images from camera
+    /dope/dimension_[obj_name] # dimensions of object
+    /dope/pose_[obj_name]      # timestamped pose of object
+    /dope/rgb_points           # RGB images with detected cuboids overlaid
+    /dope/detected_objects     # vision_msgs/Detection3DArray of all detected objects
+    /dope/markers              # RViz visualization markers for all objects
+    ```
+    *Note:* `[obj_name]` is in {cracker, gelatin, meat, mustard, soup, sugar}
+
+* To debug in RViz, run `rviz`, then add one or more of the following displays:
+    * `Add > Image` to view the raw RGB image or the image with cuboids overlaid
+    * `Add > Pose` to view the object coordinate frame in 3D.
+    * `Add > MarkerArray` to view the cuboids, meshes etc. in 3D.
+    * `Add > Camera` to view the RGB Image with the poses and markers from above.
+    
+
+## Citating
+
+If you use this tool in a research project, please cite as follows:
+```
+@inproceedings{tremblay2018corl:dope,
+ author = {Jonathan Tremblay and Thang To and Balakumar Sundaralingam and Yu Xiang and Dieter Fox and Stan Birchfield},
+ title = {Deep Object Pose Estimation for Semantic Robotic Grasping of Household Objects},
+ booktitle = {Conference on Robot Learning (CoRL)},
+ url = "https://arxiv.org/abs/1809.10790",
+ year = 2018
+}
+```
+## License
+
+Copyright (C) 2018 NVIDIA Corporation. All rights reserved. Licensed under the [CC BY-NC-SA 4.0 license](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode).
+    
