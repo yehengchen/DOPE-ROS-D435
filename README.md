@@ -4,7 +4,7 @@
 __Step 1: Download the DOPE code__
 
     cd ~/catkin_ws/src
-    git clone https://github.com/NVlabs/Deep_Object_Pose.git dope
+    git clone https://github.com/yehengchen/dope_ros_realsense.git
 
 __Step 2: Install python dependencies__
 
