@@ -1,4 +1,4 @@
-# 3D Object Pose Estimation - ROS REALSENSE
+# 3D Object Pose Estimation - ROS - Realsense d435
 
 ![](https://github.com/yehengchen/dope_ros_realsense/blob/master/dope/dope_1.gif)
 <img src="https://github.com/yehengchen/dope_ros_realsense/blob/master/dope/dope_2.png" width="60%" height="60%">
