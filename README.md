@@ -3,6 +3,8 @@
 ![](https://github.com/yehengchen/dope_ros_realsense/blob/master/dope/dope_1.gif)
 <img src="https://github.com/yehengchen/dope_ros_realsense/blob/master/dope/dope_2.png" width="60%" height="60%">
 
+__![DOPE_Demo](https://www.bilibili.com/video/av63370152)__
+
 ## DOPE Installing
 
 __Step 1: Download the DOPE code__
