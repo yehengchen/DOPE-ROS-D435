@@ -116,7 +116,7 @@ __4. Start rviz node__
     * `Add > Camera` to view the RGB Image with the poses and markers from above.
     
 
-## Citating
+## Citing
 
 If you use this tool in a research project, please cite as follows:
 ```
