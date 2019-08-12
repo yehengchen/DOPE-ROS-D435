@@ -1,6 +1,6 @@
 # 3D Object Pose Estimation - ROS REALSENSE
 
-
+![](https://github.com/yehengchen/dope_ros_realsense/blob/master/dope/dope_1.gif)
 
 
 ## DOPE Installing
