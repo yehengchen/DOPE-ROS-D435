@@ -1,4 +1,5 @@
-# dope_ros_realsense
+# 3D Object Pose Estimation - ROS REALSENSE
+
 
 
 
