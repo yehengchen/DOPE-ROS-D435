@@ -14,7 +14,7 @@ __[DOPE_Demo](https://www.bilibili.com/video/av63370152)__
 __Step 1: Download the DOPE code__
 
     cd ~/catkin_ws/src
-    git clone https://github.com/yehengchen/dope_ros_realsense.git
+    git clone https://github.com/yehengchen/DOPE-ROS-Realsense.git
 
 __Step 2: Install python dependencies__
 
