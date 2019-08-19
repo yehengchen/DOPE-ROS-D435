@@ -138,5 +138,5 @@ Copyright (C) 2018 NVIDIA Corporation. All rights reserved. Licensed under the [
 
 ## Reference
 
-__[DOPE](https://github.com/NVlabs/Deep_Object_Pose)__
+__[DOPE](https://github.com/NVlabs/Deep_Object_Pose) - Deep Object Pose Estimation (DOPE) – ROS inference (CoRL 2018)__
     
