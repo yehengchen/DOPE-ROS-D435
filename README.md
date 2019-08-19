@@ -135,4 +135,8 @@ If you use this tool in a research project, please cite as follows:
 ## License
 
 Copyright (C) 2018 NVIDIA Corporation. All rights reserved. Licensed under the [CC BY-NC-SA 4.0 license](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode).
+
+## Reference
+
+__[DOPE](https://github.com/NVlabs/Deep_Object_Pose)__
     
