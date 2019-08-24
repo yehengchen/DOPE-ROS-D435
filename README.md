@@ -9,6 +9,10 @@ __[DOPE_Demo](https://www.bilibili.com/video/av63370152)__
 - Ubuntu 16.04.2
 - ROS Kinetic
 
+## How can you get the datasets Obj in the real world
+ 
+In *__[Datasets_obj](https://github.com/yehengchen/DOPE-ROS-D435/tree/master/Datasets_obj)__*  folder you can print the Obj image.
+
 ## DOPE Installing
 
 __Step 1: Download the DOPE code__
