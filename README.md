@@ -11,7 +11,7 @@ __[DOPE_Demo](https://www.bilibili.com/video/av63370152)__
 
 ## How can you get the datasets Obj in the real world
  
-In __[Datasets_obj](https://github.com/yehengchen/DOPE-ROS-D435/tree/master/Datasets_obj)__  folder you can print the Obj image.
+In __[Datasets_obj](https://github.com/yehengchen/DOPE-ROS-D435/tree/master/Datasets_obj)__  folder you can printing the Obj texture onto a box or can of the exact size.
 
 ## DOPE Installing
 
