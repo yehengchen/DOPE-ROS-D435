@@ -39,7 +39,7 @@ __Step 4: Download [the weights](https://drive.google.com/open?id=1DfoA3m_Bm0fW8
 
 ***
 
-## ROS Wrapper for Intel® RealSense™ Devices
+## ROS Wrapper for Intel® RealSense D435
 
 __Step 1: Install the latest Intel® RealSense™ SDK 2.0__
 
