@@ -85,14 +85,18 @@ __1. Start ROS master__
 __2. Start camera node (or start your own camera node)__
     
 Realsense D435 & usb_cam node (./dope/config/config_pose.yaml):    
-    ``` 
+
+``` 
     topic_camera: "/camera/color/image_raw"            #"/usb_cam/image_raw"
     topic_camera_info: "/camera/color/camera_info"     #"/usb_cam/camera_info"
-    ``` 
+``` 
+
 Start camera node:
-    ``` 
+   
+``` 
     roslaunch realsense2_camera rs_rgbd.launch  # Publishes RGB images to `/camera/color/image_raw`
-    ```
+ ```
+
 
 __3. Start DOPE node__
     ```
@@ -107,14 +111,14 @@ __4. Start rviz node__
 ## Debugging
 
 * The following ROS topics are published (assuming `topic_publishing == 'dope'`):
-    ```
+```
     /dope/webcam_rgb_raw       # RGB images from camera
     /dope/dimension_[obj_name] # dimensions of object
     /dope/pose_[obj_name]      # timestamped pose of object
     /dope/rgb_points           # RGB images with detected cuboids overlaid
     /dope/detected_objects     # vision_msgs/Detection3DArray of all detected objects
     /dope/markers              # RViz visualization markers for all objects
-    ```
+```
     *Note:* `[obj_name]` is in {cracker, gelatin, meat, mustard, soup, sugar}
 
 * To debug in RViz, run `rviz`, then add one or more of the following displays:
