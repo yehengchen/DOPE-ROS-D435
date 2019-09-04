@@ -76,37 +76,39 @@ Specifically, make sure that the ros package ddynamic_reconfigure is installed. 
 ## Running
 
 __1. Start ROS master__
-    ```
-    cd ~/catkin_ws
-    source devel/setup.bash
-    roscore
-    ```
+
+```
+cd ~/catkin_ws
+source devel/setup.bash
+roscore
+```
 
 __2. Start camera node (or start your own camera node)__
     
 Realsense D435 & usb_cam node (./dope/config/config_pose.yaml):    
 
 ``` 
-    topic_camera: "/camera/color/image_raw"            #"/usb_cam/image_raw"
-    topic_camera_info: "/camera/color/camera_info"     #"/usb_cam/camera_info"
+topic_camera: "/camera/color/image_raw"            #"/usb_cam/image_raw"
+topic_camera_info: "/camera/color/camera_info"     #"/usb_cam/camera_info"
 ``` 
 
 Start camera node:
    
 ``` 
-    roslaunch realsense2_camera rs_rgbd.launch  # Publishes RGB images to `/camera/color/image_raw`
- ```
+roslaunch realsense2_camera rs_rgbd.launch  # Publishes RGB images to `/camera/color/image_raw`
+```
 
 
 __3. Start DOPE node__
-    ```
-    roslaunch dope dope.launch [config:=/path/to/my_config.yaml]  # Config file is optional; default is `config_pose.yaml`
-    ```
+    
+```
+roslaunch dope dope.launch [config:=/path/to/my_config.yaml]  # Config file is optional; default is `config_pose.yaml`
+```
 
 __4. Start rviz node__
-    ```
-    rosrun rviz rviz
-    ```
+```
+rosrun rviz rviz
+```
 
 ## Debugging
 
