@@ -118,6 +118,7 @@ __4. Start rviz node__
     *Note:* `[obj_name]` is in {cracker, gelatin, meat, mustard, soup, sugar}
 
 * To debug in RViz, run `rviz`, then add one or more of the following displays:
+    
     * `Add > Image` to view the raw RGB image or the image with cuboids overlaid
     * `Add > Pose` to view the object coordinate frame in 3D.
     * `Add > MarkerArray` to view the cuboids, meshes etc. in 3D.
