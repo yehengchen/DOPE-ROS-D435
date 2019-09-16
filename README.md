@@ -13,6 +13,10 @@ __[DOPE_Demo](https://www.bilibili.com/video/av63370152)__
  
 In __[Datasets_obj](https://github.com/yehengchen/DOPE-ROS-D435/tree/master/Datasets_obj)__  folder you can printing the object texture onto a box or can of the exact size.
 
+### How to make custom dataset
+
+Plese check the [NVIDIA Deep learning Dataset Synthesizer (NDDS) Documentation](https://github.com/yehengchen/Synthetic-Data-UE4)
+
 ## DOPE Installing
 
 __Step 1: Download the DOPE code__
