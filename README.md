@@ -15,7 +15,7 @@ In __[Datasets_obj](https://github.com/yehengchen/DOPE-ROS-D435/tree/master/Data
 
 ### How to make custom dataset
 
-Please check the [NVIDIA Deep learning Dataset Synthesizer (NDDS) Documentation](https://github.com/yehengchen/Synthetic-Data-UE4)
+Please check the [NVIDIA Deep learning Dataset Synthesizer (Synthetic-Data-UE4)](https://github.com/yehengchen/Synthetic-Data-UE4)
 
 ## DOPE Installing
 
