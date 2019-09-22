@@ -17,6 +17,8 @@ In __[Datasets_obj](https://github.com/yehengchen/DOPE-ROS-D435/tree/master/Data
 
 <img src="https://github.com/yehengchen/Synthetic-Data-UE4/blob/master/dope.gif" width="50%" height="50%">
 
+__[Demo](https://www.bilibili.com/video/av68638664)__
+
 __Please check the [NVIDIA Deep learning Dataset Synthesizer (Synthetic-Data-UE4)](https://github.com/yehengchen/Synthetic-Data-UE4)__
 
 ## DOPE Installing
