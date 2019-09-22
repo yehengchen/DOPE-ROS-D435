@@ -11,12 +11,11 @@ __[DOPE_Demo](https://www.bilibili.com/video/av63370152)__
 
 ### How can you get the datasets object in the real world
  
-<img src="https://github.com/yehengchen/Synthetic-Data-UE4/blob/master/dope.gif" width="60%" height="60%">
-
 In __[Datasets_obj](https://github.com/yehengchen/DOPE-ROS-D435/tree/master/Datasets_obj)__  folder you can printing the object texture onto a box or can of the exact size.
 
 ### How to make custom dataset
 
+<img src="https://github.com/yehengchen/Synthetic-Data-UE4/blob/master/dope.gif" width="50%" height="50%">
 
 __Please check the [NVIDIA Deep learning Dataset Synthesizer (Synthetic-Data-UE4)](https://github.com/yehengchen/Synthetic-Data-UE4)__
 
