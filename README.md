@@ -89,7 +89,7 @@ Specifically, make sure that the ros package ddynamic_reconfigure is installed. 
 [IntelRealSense](https://github.com/IntelRealSense/librealsense/blob/master/doc/distribution_linux.md) to install the librealsense Debian package.
 
 After installing these packages I was able to compile the ros package from source as described in 
-[Intel® RealSense™ Devices](https://github.com/intel-ros/realsense#step-3-install-intel-realsense-ros-from-sources)
+[RealSense™ Devices](https://github.com/intel-ros/realsense#step-3-install-intel-realsense-ros-from-sources)
 
 
 ***
