@@ -9,6 +9,10 @@ __[[Bilibili_Demo]](https://www.bilibili.com/video/av63370152)__
 - __Ubuntu 16.04.2__
 - __ROS Kinetic__
 
+- __Ubuntu 18.04.1__
+- __ROS Melodic__
+***
+
 ### How can you get the datasets object in the real world
  
 In __[Datasets_obj](https://github.com/yehengchen/DOPE-ROS-D435/tree/master/Datasets_obj)__  folder you can printing the object texture onto a box or can of the exact size.
@@ -47,7 +51,7 @@ __Step 4: Download [the weights](https://drive.google.com/open?id=1DfoA3m_Bm0fW8
 
 ***
 
-## ROS Wrapper for Intel® RealSense D435
+## ROS Wrapper for Intel® RealSense D435 - Ubuntu 16.04_ROS Kinetic
 
 __Step 1: Install the latest Intel® RealSense™ SDK 2.0__
 
@@ -79,7 +83,15 @@ Specifically, make sure that the ros package ddynamic_reconfigure is installed. 
     catkin_make install
     echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
     source ~/.bashrc
-    
+
+## ROS Wrapper for Intel® RealSense D435 - Ubuntu 18.04_ROS Melodic
+
+[IntelRealSense](https://github.com/IntelRealSense/librealsense/blob/master/doc/distribution_linux.md) to install the librealsense Debian package.
+
+After installing these packages I was able to compile the ros package from source as described in 
+[Intel® RealSense™ Devices](https://github.com/intel-ros/realsense#step-3-install-intel-realsense-ros-from-sources)
+
+
 ***
 ## Running
 
@@ -105,7 +117,6 @@ Start camera node:
 ``` 
 roslaunch realsense2_camera rs_rgbd.launch  # Publishes RGB images to `/camera/color/image_raw`
 ```
-
 
 __3. Start DOPE node__
     
