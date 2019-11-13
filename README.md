@@ -21,7 +21,7 @@ In __[Datasets_obj](https://github.com/yehengchen/DOPE-ROS-D435/tree/master/Data
 
 <img src="https://github.com/yehengchen/video_demo/blob/master/video_demo/chair_pin_1.gif" width="60%" height="60%">
 
-__[[Bilibili_Demo]](https://www.bilibili.com/video/av68638664)__
+__[[Bilibili_Demo]](https://www.bilibili.com/video/av75372981)__
 
 __Please check the [NVIDIA Deep learning Dataset Synthesizer (Synthetic-Data-UE4)](https://github.com/yehengchen/Synthetic-Data-UE4)__
 
