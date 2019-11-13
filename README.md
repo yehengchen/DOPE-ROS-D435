@@ -19,7 +19,7 @@ In __[Datasets_obj](https://github.com/yehengchen/DOPE-ROS-D435/tree/master/Data
 
 ### How to make custom dataset using UE4
 
-<img src="https://github.com/yehengchen/Synthetic-Data-UE4/blob/master/dope.gif" width="50%" height="50%">
+<img src="https://github.com/yehengchen/video_demo/blob/master/video_demo/chair_pin_1.gif" width="60%" height="60%">
 
 __[[Bilibili_Demo]](https://www.bilibili.com/video/av68638664)__
 
