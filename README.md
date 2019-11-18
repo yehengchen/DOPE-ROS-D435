@@ -17,7 +17,7 @@ __[[Bilibili_Demo]](https://www.bilibili.com/video/av63370152)__
  
 In __[Datasets_obj](https://github.com/yehengchen/DOPE-ROS-D435/tree/master/Datasets_obj)__  folder you can printing the object texture onto a box or can of the exact size.
 
-### How to make custom dataset using UE4
+### How to make custom synthetic data using UE4
 
 <img src="https://github.com/yehengchen/video_demo/blob/master/video_demo/chair_pin_1.gif" width="70%" height="70%">
 
