@@ -23,7 +23,7 @@ In __[Datasets_obj](https://github.com/yehengchen/DOPE-ROS-D435/tree/master/Data
 
 __[[Bilibili_Demo]](https://www.bilibili.com/video/av75372981)__
 
-__Please check the [NVIDIA Deep learning Dataset Synthesizer (Synthetic-Data-UE4)](https://github.com/yehengchen/Synthetic-Data-UE4)__
+__Please check the [NVIDIA Deep learning Dataset Synthesizer (Synthetic-Data-UE4)](https://github.com/yehengchen/DOPE-ROS-D435/blob/master/Synthetic-Data-UE4-DOPE.md)__
 
 ## DOPE Installing
 
