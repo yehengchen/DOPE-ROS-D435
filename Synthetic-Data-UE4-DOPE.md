@@ -95,8 +95,7 @@ Open the Unreal Editor with the `Dataset_Synthesizer/Source/`__NDDS.uproject__, 
 Training code is also provided but not supported - [train.py](https://github.com/yehengchen/DOPE-ROS-D435/blob/master/dope/scripts/train.py)
 
 ```
-python train.py --data path/to/data --object soup --outf soup 
---gpuids 0 1 2 3 4 --lr 0.01 --epochs 100 
+python train.py --data path/to/data --object soup --outf soup --gpuids 0 1 2 3 4 --lr 0.01 --epochs 100 
 
 ```
 
