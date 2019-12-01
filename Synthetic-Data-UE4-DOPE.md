@@ -75,6 +75,8 @@ Note: Nvidia Deep Learning Dataset Synthesizer plugins may only be used within a
 
 ***
 
+__The video show  [How to use the Blender & UE4](https://www.bilibili.com/video/av76146114)__
+
 ## STEP 3 - Installing Blender
 
 __Download [[Blender]](https://www.blender.org/)__
