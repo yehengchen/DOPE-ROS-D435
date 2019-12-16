@@ -87,10 +87,77 @@ Specifically, make sure that the ros package ddynamic_reconfigure is installed. 
 
 ## ROS Wrapper for Intel® RealSense D435 - Ubuntu 18.04_ROS Melodic
 
-[IntelRealSense](https://github.com/IntelRealSense/librealsense/blob/master/doc/distribution_linux.md) to install the librealsense Debian package.
+* ### The steps are described in bellow documentation
+  __[[IntelRealSense -Linux Distribution]](https://github.com/IntelRealSense/librealsense/blob/master/doc/distribution_linux.md)__
+  
+  ```
+  
+  sudo apt-key adv --keyserver keys.gnupg.net --recv-key F6E65AC044F831AC80A06380C8B3A55A6F3EFCDE || sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-key
+  
+  sudo add-apt-repository "deb http://realsense-hw-public.s3.amazonaws.com/Debian/apt-repo bionic main" -u
+  
+  sudo apt-get install librealsense2-dkms
+  
+  sudo apt-get install librealsense2-utils
+  
+  sudo apt-get install librealsense2-dev
+  
+  sudo apt-get install librealsense2-dbg #(리얼센스 패키지 설치 확인하기)
+  
+  realsense-viewer
+  
+  ```
+  
+* ### Installing Realsense-ros 
+  1) __catkin workspace__
+  
+  ```
+  mkdir -p ~/catkin_ws/src
+  cd ~/catkin_ws/src/
+  ```
+  
+  2) __Download realsense-ros pkg__
+  	
+  ```
+  git clone https://github.com/IntelRealSense/realsense-ros.git
+  cd realsense-ros/
+  git checkout `git tag | sort -V | grep -P "^\d+\.\d+\.\d+" | tail -1`
+  cd ..
+  ```
+  
+  3) __Download ddynamic_reconfigure__
+  
+  ```
+  cd src
+  git clone https://github.com/pal-robotics/ddynamic_reconfigure/tree/kinetic-devel
+  cd ..
+  ```
+  
+  4) __Pkg installation__
+  
+  ```
+  catkin_init_workspace
+  cd ..
+  catkin_make clean
+  catkin_make -DCATKIN_ENABLE_TESTING=False -DCMAKE_BUILD_TYPE=Release
+  catkin_make install
+  echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
+  source ~/.bashrc
+  ```
+  
 
-After installing these packages I was able to compile the ros package from source as described in 
-[RealSense™ Devices](https://github.com/intel-ros/realsense#step-3-install-intel-realsense-ros-from-sources)
+  5) __Run D435 node__
+  ```
+  roslaunch realsense2_camera rs_camera.launch
+  ```
+  
+  6) __Run rviz testing__
+
+  ```
+  rosrun rviz rvzi
+  Add > Image to view the raw RGB image
+  ```
+
 
 
 ***
