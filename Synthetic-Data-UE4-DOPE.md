@@ -45,6 +45,8 @@ Creating a blank default project is good enough.
 
 4. Close the Editor and Launcher for now.
 
+___
+
 __Linux Specific:__
 
 a. for Unreal Engine, refer to the UE4 website instructions: [https://wiki.unrealengine.com/Building_On_Linux](https://wiki.unrealengine.com/Building_On_Linux)
