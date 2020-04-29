@@ -2,7 +2,7 @@
 
 <img src="https://github.com/yehengchen/Synthetic-Data-UE4/blob/master/ue4_random_background.png" width="60%" height="60%">
 
-__The video show  [How to use the Blender & UE4](https://www.bilibili.com/video/av76146114)__
+__[How to use the Blender & UE4](https://www.bilibili.com/video/av76146114)__
 
 ## STEP 1 - Download the NDDS Documentation
 
