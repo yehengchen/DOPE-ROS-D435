@@ -33,7 +33,7 @@ __Please check the [NVIDIA Deep learning Dataset Synthesizer (Synthetic-Data-UE4
 __Step 1: Download the DOPE code__
 
     cd ~/catkin_ws/src
-    git clone https://github.com/yehengchen/DOPE-ROS-Realsense.git
+    git clone https://github.com/yehengchen/DOPE-ROS-D435.git
 
 __Step 2: Install python dependencies__
 
