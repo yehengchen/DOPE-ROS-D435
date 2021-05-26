@@ -7,11 +7,9 @@
 __[[Bilibili_Demo]](https://www.bilibili.com/video/av63370152)__
 ***
 ### Development Environment
-- __Ubuntu 16.04.2__
-- __ROS Kinetic__
+- __Ubuntu 16.04.2__ - __ROS Kinetic__
 
-- __Ubuntu 18.04.1__
-- __ROS Melodic__
+- __Ubuntu 18.04.1__ - __ROS Melodic__
 ***
 
 ### How can you get the datasets object in the real world
