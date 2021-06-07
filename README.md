@@ -1,11 +1,5 @@
 # 3D Object Pose Estimation - ROS - Realsense d435
 
-<img src="https://github.com/yehengchen/DOPE-ROS-D435/blob/master/dope/dope_occlusion.png" width="80%" height="80%">
-
-<img src="https://github.com/yehengchen/dope_ros_realsense/blob/master/dope/dope_2.png" width="80%" height="80%">
-
-__[[Bilibili_Demo]](https://www.bilibili.com/video/av63370152)__
-***
 ### Development Environment
 - __Ubuntu 16.04.2__ - __ROS Kinetic__
 
@@ -217,6 +211,13 @@ rosrun rviz rviz
     * `Add > MarkerArray` to view the cuboids, meshes etc. in 3D.
     * `Add > Camera` to view the RGB Image with the poses and markers from above.
     
+### Demo
+
+<img src="https://github.com/yehengchen/DOPE-ROS-D435/blob/master/dope/dope_occlusion.png" width="80%" height="80%">
+
+<img src="https://github.com/yehengchen/dope_ros_realsense/blob/master/dope/dope_2.png" width="80%" height="80%">
+
+__[[Bilibili_Demo]](https://www.bilibili.com/video/av63370152)__
 
 ## Citing
 
