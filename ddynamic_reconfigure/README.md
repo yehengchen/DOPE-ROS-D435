@@ -1,4 +1,4 @@
-#ddynamic_reconfigure
+# ddynamic_reconfigure
 
 The ddynamic_reconfigure package is a C++ extension of [dynamic_reconfigure](https://github.com/ros/dynamic_reconfigure) that allows modifying parameters of a ROS node using the dynamic_reconfigure framework without having to write cfg files.
 
